@@ -16,6 +16,10 @@ print_variable(CMAKE_CURRENT_SOURCE_DIR)
 
 print_variable(CMAKE_CURRENT_BINARY_DIR)
 
+print_variable(CMAKE_INSTALL_PREFIX)
+print_variable(CMAKE_INSTALL_LIBDIR)
+print_variable(CMAKE_INSTALL_BINDIR)
+
 message("${CMAKE_CURRENT_LIST_DIR}")
 message("${CMAKE_CURRENT_LIST_FILE}")
 print_variable(CMAKE_CURRENT_LIST_DIR)
