@@ -2,3 +2,4 @@ build
 CMakeFiles
 *.swp
 compile_commands.json
+third_party
