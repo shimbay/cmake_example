@@ -11,7 +11,7 @@ if(NOT json_fc_POPULATED)
 	FetchContent_Populate(json_fc)
 endif()
 
-message(${json_fc_SOURCE_DIR}/single_include/nlohmann)
-include_directories(
+add_library(json INTERFACE)
+target_include_directories(json INTERFACE
 	${json_fc_SOURCE_DIR}/single_include/nlohmann
 )

@@ -23,11 +23,13 @@ print_target_properties(gtest)
 
 # header only
 find_package(json REQUIRED)
+print_target_properties(json)
 
 add_executable(${THIS} ${${THIS}_SRCS})
 target_link_libraries(${THIS} PRIVATE 
 	sum
 	gtest
+	json
 )
 
 if(EXISTS "${CMAKE_CURRENT_BINARY_DIR}/compile_commands.json")
